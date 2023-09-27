@@ -31,7 +31,7 @@ public class ToolsController : MonoBehaviour
             var distance = Vector2.Distance(Player.Instance.Position, soilTileMap.GetCellCenterWorld(tilePos));
             if (distance <= Player.Instance.range) {
                 //plow tile
-                tilledTileMap.SetTile(tilePos, null);
+                tilledTileMap.SetTile(tilePos, plowableTile);
             }
         }
     }
